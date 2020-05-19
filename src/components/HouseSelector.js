@@ -1,20 +1,17 @@
 import React from 'react';
 
-const HouseSelector = (props) => {
-  const options = props.characters.map(character => {
-    return<option value={character.name} key={character.name}>
-    {character.name}
-    </option>
-  })
+const HouseSelector= (props) => {
 
   return (
-    <select name="character-selector" id="character-selector">
-      <option>
-        Choose a character...
-      </option>
-        {options}
+    <select name="house-selector" id="house-selector">
+      <option>Choose a House</option>
+      <option value="gryffindor">Gryffindor</option>
+      <option value="hufflepuff">Hufflepuff</option>
+      <option value="ravenclaw">Ravenclaw</option>
+      <option value="slytherin">Slytherin</option>
+
     </select>
-  )
-};
+    )
+  };
 
 export default HouseSelector;

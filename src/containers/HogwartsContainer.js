@@ -1,5 +1,6 @@
 import React from 'react';
 import HouseSelector from '../components/HouseSelector';
+import CharacterSelector from '../components/CharacterSelector';
 
 class HogwartsContainer extends React.Component {
   constructor(props) {
@@ -31,8 +32,9 @@ class HogwartsContainer extends React.Component {
 
     return(
       <>
-        <h2>Hogwarts Container</h2>
-        <HouseSelector characters={this.state.characters} onCharacterSelected={this.handleCharacterSelected} />
+        <h2>Welcome To Hogwarts</h2>
+        <HouseSelector />
+        <CharacterSelector characters={this.state.characters} onCharacterSelected={this.handleCharacterSelected} />
 
       </>
     );
