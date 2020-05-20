@@ -7,9 +7,13 @@ const CharacterSelector = (props) => {
     </option>
   })
 
+  function handleChange(event) {
+    props.onCharacterSelected(event.target.value);
+  }
+
   return (
-    <select name="character-selector" id="character-selector">
-      <option>
+    <select name="character-selector" onChange={handleChange} defaultValue="default">
+      <option disabled value="defaultValue">
         Choose a character...
       </option>
         {options}
