@@ -3,6 +3,7 @@ import React from 'react';
 const HouseSelector= (props) => {
 
   return (
+    <div class="custom-select">
     <select name="house-selector" id="house-selector">
       <option>Choose a House</option>
       <option value="gryffindor">Gryffindor</option>
@@ -11,6 +12,7 @@ const HouseSelector= (props) => {
       <option value="slytherin">Slytherin</option>
 
     </select>
+    </div>
     )
   };
 

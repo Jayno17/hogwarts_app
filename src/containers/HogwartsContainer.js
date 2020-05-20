@@ -2,6 +2,7 @@ import React from 'react';
 import HouseSelector from '../components/HouseSelector';
 import CharacterSelector from '../components/CharacterSelector';
 import CharacterDetail from '../components/CharacterDetail';
+import Hogwarts from './Hogwarts.css';
 
 class HogwartsContainer extends React.Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class HogwartsContainer extends React.Component {
 
 
   render(){
+
     const selectedCharacter = this.state.characters.find(character =>
     character.name === this.state.selectedCharacterName)
 
@@ -37,7 +39,6 @@ class HogwartsContainer extends React.Component {
         <HouseSelector />
         <CharacterSelector characters={this.state.characters} onCharacterSelected={this.handleCharacterSelected} />
         <CharacterDetail character={selectedCharacter} />
-
       </>
     );
   }

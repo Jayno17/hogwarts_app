@@ -12,12 +12,14 @@ const CharacterSelector = (props) => {
   }
 
   return (
+    <div class="custom-select">
     <select name="character-selector" onChange={handleChange} defaultValue="default">
       <option disabled value="defaultValue">
         Choose a character...
       </option>
         {options}
     </select>
+    </div>
   )
 };
 

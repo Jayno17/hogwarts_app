@@ -1,4 +1,5 @@
 import React from 'react';
+import Character from './Character.css';
 
 const CharacterDetail = (props) => {
   if (!props.character) return null;
